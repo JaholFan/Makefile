@@ -1,4 +1,5 @@
-OBJS = main.o src/add.o 
+VPATH = ./src
+OBJS = main.o add.o
  
 CINCLUDES = -I ./header
 CFLAGS = -Wall $(CINCLUDES)
