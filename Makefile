@@ -1,4 +1,4 @@
-VPATH = ./src
+vpath %.c ./src
 OBJS = main.o add.o
  
 CINCLUDES = -I ./header
