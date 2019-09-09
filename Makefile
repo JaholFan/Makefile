@@ -1,4 +1,14 @@
-exe :hello.o
-	gcc -o exe hello.o
-hello.o:hello.c
-	gcc -c hello.c
+OBJS = main.o src/add.o 
+ 
+CINCLUDES = -I ./header
+CFLAGS = -Wall
+ 
+TARGET = test
+ 
+$(TARGET):$(OBJS)
+	gcc $(CFLAGS) $^ -o $@ $(CINCLUDES)
+     
+.PHONY:clean
+ 
+clean:
+	rm $(OBJS) $(TARGET)
