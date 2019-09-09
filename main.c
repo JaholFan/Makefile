@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header/add.h"
+#include "add.h"
 int main(void)
 {
     int a = 1,b =2;

@@ -1,7 +1,7 @@
 OBJS = main.o src/add.o 
  
 CINCLUDES = -I ./header
-CFLAGS = -Wall
+CFLAGS = -Wall $(CINCLUDES)
  
 TARGET = test
  
